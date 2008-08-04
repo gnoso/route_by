@@ -1,13 +1,33 @@
 RouteBy
 ===========
 
-Introduction goes here.
+The route_by plugin allows you to use a field other than id to identify object
+identities in your routes.
 
+To install, simply run the following command from your project.
+
+	script/plugin install git://github.com/gnoso/route_by.git
+
+Then in your ActiveRecord model classes simply add the route_by statement.
 
 Example
 =======
 
-Example goes here.
+class MyModel < ActiveRecord::Base
+  
+	route_by :name
+  
+end
 
+As a result of this statement, assuming your data has an id of 1 and
+a :name attribute with the value "florida", your resourceful routes change from this:
+
+  	http://server.com/models/1
+
+to:
+
+	http://server.com/models/florida
+
+This is good for cases where you don't want your record ids in your Urls.
 
 Copyright (c) 2008 Gnoso Inc., released under the MIT license
