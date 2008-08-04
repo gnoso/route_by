@@ -13,20 +13,20 @@ Then in your ActiveRecord model classes simply add the route_by statement.
 Example
 =======
 
-class MyModel < ActiveRecord::Base
+class Car < ActiveRecord::Base
   
 	route_by :name
   
 end
 
-As a result of this statement, assuming your data has an id of 1 and
-a :name attribute with the value "florida", your resourceful routes change from this:
+As a result of this statement, assuming your Car object has an id of 114 and
+a :name attribute with the value "eleanor", your resourceful routes change from this:
 
-  	http://server.com/models/1
+	http://server.com/cars/114
 
 to:
 
-	http://server.com/models/florida
+	http://server.com/cars/eleanor
 
 This is good for cases where you don't want your record ids in your Urls.
 
