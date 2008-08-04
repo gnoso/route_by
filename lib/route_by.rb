@@ -12,11 +12,11 @@ module RouteBy
       
       # attach the instance methods to this class
       include InstanceMethods
-      
+            
       # add validation for the id
-      validates_presence_of :name
-      validates_uniqueness_of :name
-      validates_format_of :name, :with => /\A[^\/\. ]*\Z/, :message => "may not contain the characters '/', '.' or ' '"
+      validates_presence_of field_name
+      validates_uniqueness_of field_name
+      validates_format_of field_name, :with => /\A[^\/\. ]*\Z/, :message => "may not contain the characters '/', '.' or ' '"
       
       # set the field_name into a class instance variable
       self.instance_variable_set(:@route_by_field_name, field_name)
