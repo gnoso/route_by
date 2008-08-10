@@ -36,6 +36,9 @@ module RouteBy
       send(self.class.instance_variable_get(:@route_by_field_name))
     end
 
+    def set_param(id)
+      send("#{self.class.instance_variable_get(:@route_by_field_name)}=", id)
+    end
   end
   
 end
