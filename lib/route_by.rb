@@ -8,14 +8,14 @@ module RouteBy
   module ClassMethods
 
     # this enables "route-by" functionality for an ActiveRecord model class
-    def route_by(field_name)
+    def route_by(field_name, unique_by = [])
       
       # attach the instance methods to this class
       include InstanceMethods
             
       # add validation for the id
       validates_presence_of field_name
-      validates_uniqueness_of field_name
+      validates_uniqueness_of field_name, :scope => unique_by
       validates_format_of field_name, :with => /\A[^\/\. ]*\Z/, :message => "may not contain the characters '/', '.' or ' '"
       
       # set the field_name into a class instance variable
