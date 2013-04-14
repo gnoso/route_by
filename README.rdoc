@@ -11,7 +11,7 @@ script/plugin install git://github.com/gnoso/route_by.git
 For your ActiveRecord model classes, simply add the route_by declaration:
 
 class Car < ActiveRecord::Base
-  route_by :name
+route_by :name
 end
 
 As a result of this statement, assuming your Car object has an id of 114 and
