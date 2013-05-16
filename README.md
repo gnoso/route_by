@@ -17,5 +17,5 @@ class Car < ActiveRecord::Base
 end
 ```
 
-As a result of this statement, assuming your class object (Car in this instance) has an id of 114 and
+As a result of this statement, assuming your class object (Car in this instance) has an ID of 114 and
 a :name attribute with the value "eleanor", the ID of the record is now eleanor instead of 114.
