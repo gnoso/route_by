@@ -1,14 +1,15 @@
-= route_by
-
+# route_by
 Route_By allows you to use a field other than ID for identifying object identities in your routes.
 
-== Install
+## Install
 To install, simply run the following command from your project:
 
-script/plugin install git://github.com/gnoso/route_by.git
+```script
+script/plugin install https://github.com/gnoso/route_by.git
+```
 
-== Usage
-For your ActiveRecord model classes, simply add the route_by declaration:
+## Usage
+In your ActiveRecord model classes, simply add the route_by declaration:
 
 class Car < ActiveRecord::Base
 route_by :name
