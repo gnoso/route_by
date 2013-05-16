@@ -1,3 +1,5 @@
+require "route_by/version"
+
 module RouteBy
   def self.included(cls)
     cls.extend(ClassMethods)
@@ -20,7 +22,6 @@ module RouteBy
     def find_by_route_id(id)
       self.send("find_by_#{self.instance_variable_get(:@route_by_field_name)}", id)
     end
-
   end
 
   module InstanceMethods
