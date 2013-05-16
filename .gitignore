@@ -1,7 +1,15 @@
-*.gem
-*.rbc
-.bundle
-.config
+# Files
+.DS_Store
+.project
+  ## Any files w/ these extensions:
+    *.gem
+    *.rbc
+    *.bundle
+    *.config
+      ## Yard ardifacts
+      *.yardoc
+
+# Directories
 coverage
 InstalledFiles
 lib/bundler/man
@@ -11,8 +19,6 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
-
-# YARD artifacts
-.yardoc
-_yardoc
-doc/
+  ## YARD artifacts
+  _yardoc
+  doc/
