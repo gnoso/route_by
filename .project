@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<projectDescription>
-	<name>route_by</name>
-	<comment>Alter in-program integer IDs into string IDs</comment>
-	<projects></projects>
-	<buildSpec>1.0</buildSpec>
-	<natures></natures>
-</projectDescription>
