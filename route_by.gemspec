@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Route_By allows you to use a field other than ID for identifying object identities in your routes.}
   spec.summary       = %q{A Rails plugin that enables RESTful resources to be routed by a field other than a record ID.}
   spec.homepage      = "https://github.com/gnoso/route_by"
-  spec.license       = "MIT"
+  spec.license       = "Apache License 2.0"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
